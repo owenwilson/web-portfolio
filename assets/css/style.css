@@ -1,0 +1,149 @@
+/* Reset básico y configuración global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Contenedor principal para centrar contenido */
+header, nav, section, footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Header específico */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navegación */
+nav {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #667eea;
+}
+
+/* Títulos de sección */
+h2 {
+    color: #667eea;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Artículos de experiencia y proyectos */
+article {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+article h3 {
+    color: #764ba2;
+    margin-bottom: 5px;
+}
+
+article p {
+    margin: 10px 0;
+}
+
+/* Listas */
+ul {
+    margin: 10px 0 10px 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Enlaces */
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contacto */
+#contacto div {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#contacto p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    margin-bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
